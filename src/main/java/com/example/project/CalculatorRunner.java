@@ -2,11 +2,14 @@ package com.example.project;
 
 public class CalculatorRunner {
     public static void main(String[] args) {
-
-        //test your program here
-        //1. create an instance of the calculator class
-
-        //2. call any methods of that class to test
-
+        Calculator calculator = new Calculator("TI84");
+        int n1 = 2;
+        int n2 = 3;
+        int expectedOutput = 1;
+        int studentOutput = calculator.absoluteValue(n1, n2);
+        System.out.print(studentOutput);
+        if (expectedOutput==studentOutput){
+            System.out.print("True");
+        }
     }
 }
